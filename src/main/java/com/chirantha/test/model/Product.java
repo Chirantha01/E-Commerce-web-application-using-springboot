@@ -2,9 +2,14 @@ package com.chirantha.test.model;
 
 import org.springframework.stereotype.Component;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
 @Component
+@Entity
 public class Product {
 
+    @Id
     private int prod_id;
     private String prod_name;
     private double prod_price;
